@@ -1,0 +1,148 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "E1 POS",
+      "tone": "Industrial, Sleek, Appetizing, High-Performance",
+      "core_philosophy": "The Anti-AI Designer: High density, dark mode by default, rich textures over flat colors.",
+      "theme_mode": "dark"
+    },
+    "typography": {
+      "headings": {
+        "family": "Barlow Condensed, sans-serif",
+        "weights": ["600", "700"],
+        "usage": "All headers, price tags, table numbers, and receipt-style data.",
+        "letter_spacing": "tracking-tight"
+      },
+      "body": {
+        "family": "Manrope, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "General text, descriptions, buttons, inputs.",
+        "letter_spacing": "tracking-normal"
+      },
+      "install_instructions": "Import via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap');"
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "default": "#09090b",
+          "secondary": "#18181b",
+          "overlay": "rgba(9, 9, 11, 0.8)"
+        },
+        "foreground": {
+          "default": "#fafafa",
+          "muted": "#a1a1aa",
+          "inverse": "#09090b"
+        },
+        "brand": {
+          "primary": "#f59e0b",
+          "secondary": "#d97706",
+          "accent": "#22c55e",
+          "destructive": "#ef4444"
+        },
+        "border": {
+          "default": "#27272a",
+          "active": "#f59e0b"
+        }
+      },
+      "usage_rules": {
+        "primary_action": "bg-amber-500 hover:bg-amber-600 text-black font-bold",
+        "secondary_action": "bg-zinc-800 hover:bg-zinc-700 text-white",
+        "success_state": "text-green-500 bg-green-500/10 border-green-500/20",
+        "danger_state": "text-red-500 bg-red-500/10 border-red-500/20"
+      }
+    },
+    "spacing_and_layout": {
+      "scale": "Generous spacing (2-3x standard). Use p-6, p-8, p-12 for containers.",
+      "grid_system": {
+        "mode_a_tetris": "For Menus/Gallery. Mix col-span-2 (Square), col-span-4 (Hero), col-span-1 (Filler). Gap-4.",
+        "mode_b_density": "For Admin/POS. Grid-cols-12. Zero waste. Gap-2 or Gap-4. Full height usage."
+      },
+      "touch_optimization": {
+        "buttons": "min-h-[48px] or h-12. Mobile: h-14.",
+        "inputs": "h-12 text-lg px-4."
+      }
+    },
+    "components": {
+      "cards": {
+        "style": "Flat, dark zinc-900 background, 1px border-zinc-800. No heavy shadows. Rounded-md.",
+        "hover": "border-amber-500/50 transition-colors duration-200"
+      },
+      "buttons": {
+        "primary": "bg-amber-500 text-black font-bold rounded-sm uppercase tracking-wider hover:translate-y-[-1px]",
+        "ghost": "hover:bg-zinc-800 text-zinc-300 hover:text-white"
+      },
+      "inputs": {
+        "style": "bg-zinc-950 border-zinc-800 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 rounded-sm"
+      },
+      "navigation": {
+        "sidebar": "Fixed left, w-64, bg-zinc-950 border-r border-zinc-800. Links: flex items-center gap-3 p-3 text-zinc-400 hover:text-amber-500 hover:bg-zinc-900 rounded-md transition-all."
+      },
+      "tables": {
+        "style": "w-full text-sm. Header: text-zinc-500 uppercase tracking-widest text-xs. Row: border-b border-zinc-800 hover:bg-zinc-900/50."
+      }
+    },
+    "visual_enhancers": {
+      "textures": "Use subtle noise/grain on the main background to avoid 'digital flatness'.",
+      "glassmorphism": "Use backdrop-blur-xl bg-black/60 border-b border-white/5 for sticky headers.",
+      "glows": "Active tables/orders get a subtle box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.3)."
+    },
+    "motion": {
+      "defaults": {
+        "duration": "0.2s",
+        "ease": "ease-out"
+      },
+      "hover": "scale-[1.02] active:scale-[0.98]",
+      "page_transition": "opacity-0 to opacity-100 duration-300"
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1767706508378-8835e2a0ec97?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjByZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkaW5pbmclMjBuaWdodHxlbnwwfHx8fDE3NzA2OTExNzB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern dark restaurant interior for login/signup pages."
+      },
+      {
+        "category": "food_burger",
+        "url": "https://images.unsplash.com/photo-1610970879786-70b2cc0e8a9c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzcwNjkxMTY4fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Gourmet burger on dark background for menu item."
+      },
+      {
+        "category": "food_pizza",
+        "url": "https://images.unsplash.com/photo-1751200884901-c1c6f43ae1d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGl6emElMjB3b29kJTIwZmlyZWR8ZW58MHx8fHwxNzcwNjkxMTY5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Artisan pizza for menu item."
+      },
+      {
+        "category": "food_cocktail",
+        "url": "https://images.unsplash.com/photo-1610515660473-c11d4f3f7d37?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxjb2NrdGFpbCUyMGJhciUyMGRhcmt8ZW58MHx8fHwxNzcwNjkxMTcwfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Cocktail for drinks menu."
+      },
+      {
+        "category": "food_salad",
+        "url": "https://images.unsplash.com/photo-1574926054530-540288c8e678?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxjYWVzYXIlMjBzYWxhZCUyMGJsYWNrJTIwYm93bHxlbnwwfHx8fDE3NzA2OTExNzZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Fresh salad for healthy menu section."
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "usage": "Use stroke-width={1.5} for a refined look. Size 16-20px for UI, 24px for Nav."
+    }
+  },
+  "implementation_rules": {
+    "universal_guidelines": [
+      "DO NOT use gradients for backgrounds. Use flat dark colors or subtle textures.",
+      "DO NOT center text unless it is a Hero title. Left align everything else.",
+      "Use 'sonner' for all toast notifications.",
+      "All interactive elements must have a 'data-testid'.",
+      "Buttons must have a hover state that lightens the background or adds a border.",
+      "Use 'Barlow Condensed' for all numbers (prices, dates, counts).",
+      "Never use 'transparent' background for dropdowns or modals."
+    ],
+    "tech_stack": {
+      "framework": "React 19",
+      "styling": "Tailwind CSS",
+      "components": "Shadcn UI (Customized)",
+      "icons": "Lucide React"
+    }
+  }
+}
